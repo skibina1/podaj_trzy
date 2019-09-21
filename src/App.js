@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from './components/Main'
+import Footer from './components/Footer';
 
 class App extends Component {
   render() {
@@ -10,11 +11,12 @@ class App extends Component {
         <div className="container">
           <div className="row">
             <div className="col">
-              <h1>Podaj trzy</h1>
+              <h1>Podaj Trzy</h1>
               <Main></Main>
             </div>
           </div>
         </div>
+        <Footer></Footer>
     </div>
     );
   }

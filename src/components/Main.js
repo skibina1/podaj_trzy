@@ -11,16 +11,16 @@ class Main extends Component {
             threeTracksList: []
         }
     }
-    
-    pickThree(){
+
+    pickThree() {
         //console.log(tracksList);
         var localThreeTracksList = [], usedNumber = [];
         var iter = 0;
-        while( iter < 3){
+        while (iter < 3) {
             var index = Math.floor(Math.random() * tracksList.length);
-            if ( usedNumber.includes(index)){
+            if (usedNumber.includes(index)) {
                 continue;
-            }else{
+            } else {
                 usedNumber.push(index);
             }
             var randomTrack = tracksList[index];
@@ -28,7 +28,7 @@ class Main extends Component {
             randomTrack = ' ';
             iter++;
         }
-      //  console.log(localThreeTracksList);
+        //  console.log(localThreeTracksList);
         this.setState({
             threeTracksList: localThreeTracksList.slice()
         });
@@ -39,17 +39,17 @@ class Main extends Component {
     render() {
         return (
             <div>
-                <button type="button" className="btn btn-primary btn-lg" onClick={()=> this.pickThree()} >Losuj tory</button>
+                <button type="button" className="btn btn-primary btn-lg" onClick={() => this.pickThree()} >Losuj tory</button>
                 <div className="Main-margin">
-                    {   this.state.threeTracksList.length !== 0 ? <div> {
+                    {this.state.threeTracksList.length !== 0 ? <div> {
                         this.state.threeTracksList.map((item) => (
-                            <div className="Main-tracks">{item}</div>   
-                        )) } </div>
+                            <div className="Main-tracks">{item}</div>
+                        ))} </div>
                         :
                         <div className="Main-tracks">Tutaj pojawią sie trzy wylosowane tory</div>
                     }
                 </div>
-            </div> 
+            </div>
         );
     }
 }
