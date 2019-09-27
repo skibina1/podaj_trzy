@@ -14,35 +14,33 @@ class Main extends Component {
 
     pickThree() {
         //console.log(tracksList);
-        var localThreeTracksList = [], usedNumber = [];
-        var iter = 0;
+        const localThreeTracksList = [], usedNumber = [];
+        let iter = 0;
         while (iter < 3) {
-            var index = Math.floor(Math.random() * tracksList.length);
+            const index = Math.floor(Math.random() * tracksList.length);
             if (usedNumber.includes(index)) {
                 continue;
             } else {
                 usedNumber.push(index);
             }
-            var randomTrack = tracksList[index];
-            localThreeTracksList.push(randomTrack);
-            randomTrack = ' ';
+            localThreeTracksList.push(tracksList[index]);
             iter++;
         }
         //  console.log(localThreeTracksList);
         this.setState({
             threeTracksList: localThreeTracksList.slice()
         });
-        localThreeTracksList = [];
-        usedNumber = [];
     }
 
     render() {
+        const { threeTracksList } = this.state;
+
         return (
             <div>
                 <button type="button" className="btn btn-primary btn-lg" onClick={() => this.pickThree()} >Losuj tory</button>
                 <div className="Main-margin">
-                    {this.state.threeTracksList.length !== 0 ? <div> {
-                        this.state.threeTracksList.map((item) => (
+                    {threeTracksList.length ? <div> {
+                        threeTracksList.map((item) => (
                             <div className="Main-tracks">{item}</div>
                         ))} </div>
                         :

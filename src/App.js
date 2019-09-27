@@ -12,11 +12,11 @@ class App extends Component {
           <div className="row">
             <div className="col">
               <h1>Podaj Trzy</h1>
-              <Main></Main>
+              <Main/>
             </div>
           </div>
         </div>
-        <Footer></Footer>
+        <Footer/>
     </div>
     );
   }
