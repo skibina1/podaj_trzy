@@ -36,7 +36,7 @@ class Main extends Component {
         const { threeTracksList } = this.state;
 
         return (
-            <div>
+            <div className="Main">
                 <button type="button" className="btn btn-primary btn-lg" onClick={() => this.pickThree()} >Losuj tory</button>
                 <div className="Main-margin">
                     {threeTracksList.length ? <div> {

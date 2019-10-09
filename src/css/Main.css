@@ -8,3 +8,30 @@
     margin-top: 100px;
     margin-bottom: 60px;
 }
+
+.btn-primary{
+    color:#fff;
+    background-color:#717f8a;
+    border-color:#6d7a85
+}
+.btn-primary:hover{
+    color:#fff;
+    background-color:#66737d;
+    border-color:#66737d
+}
+.btn-primary.focus,.btn-primary:focus{
+    box-shadow:0 0 0 .05rem #606c75
+}
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle
+{
+    color:#fff;
+    background-color:#434c52;
+    border-color:#434c52
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.dropdown-toggle:focus{
+    box-shadow:0 0 0 .05rem #606c75
+}
