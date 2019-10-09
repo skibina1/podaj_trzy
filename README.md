@@ -1,8 +1,10 @@
-This project has been created to help Speedway Turbo Sliders's players choose the tracks during a "free" game on server.
+<h2>This project has been created to help Speedway Turbo Sliders's players choose the tracks during a friendly game on server.</h2>
 
-Link to APP: https://podajtrzy.herokuapp.com/
-Speedway Turbo Sliders: https://www.sts-pl.eu
-Facebook: www.facebook.com/stspl.eu/
+<ul>
+<li>Link to APP: https://podajtrzy.herokuapp.com/</li>
+<li>Speedway Turbo Sliders: https://www.sts-pl.eu</li>
+  <li>Facebook: www.facebook.com/stspl.eu/</li>
+</ul>
 
 
 
