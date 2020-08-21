@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import tracks from '../data/tracks.json';
 import '../css/Main.css';
+import {pickThree} from '../util/utils'
 
-var tracksList = tracks.tracks;
 
 class Main extends Component {
   constructor(props) {
@@ -12,24 +11,10 @@ class Main extends Component {
     }
   }
 
-  pickThree() {
-    //console.log(tracksList);
-    const localThreeTracksList = [], usedNumber = [];
-    let iter = 0;
-    while (iter < 3) {
-      const index = Math.floor(Math.random() * tracksList.length);
-      if (usedNumber.includes(index)) {
-        continue;
-      } else {
-        usedNumber.push(index);
-      }
-      localThreeTracksList.push(tracksList[index]);
-      iter++;
-    }
-    //  console.log(localThreeTracksList);
+  pickTracks = () => {
     this.setState({
-      threeTracksList: localThreeTracksList.slice()
-    });
+      threeTracksList: pickThree(this.props.tracks)
+    })
   }
 
   render() {
@@ -37,7 +22,7 @@ class Main extends Component {
 
     return (
       <div className="Main">
-        <button type="button" className="btn btn-primary btn-lg" onClick={() => this.pickThree()} >Losuj tory</button>
+        <button type="button" className="btn btn-primary btn-lg" onClick={() => this.pickTracks()} >Losuj tory</button>
         <div className="Main-margin">
           {threeTracksList.length ? <div> {
             threeTracksList.map((item, i) => (

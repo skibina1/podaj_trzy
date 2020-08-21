@@ -16,8 +16,8 @@
 }
 .btn-primary:hover{
     color:#fff;
-    background-color:#66737d;
-    border-color:#66737d
+    background-color:#454f57;
+    border-color:#454f57
 }
 .btn-primary.focus,.btn-primary:focus{
     box-shadow:0 0 0 .05rem #606c75
@@ -29,9 +29,4 @@
     color:#fff;
     background-color:#434c52;
     border-color:#434c52
-}
-.btn-primary:not(:disabled):not(.disabled).active:focus,
-.btn-primary:not(:disabled):not(.disabled):active:focus,
-.show>.btn-primary.dropdown-toggle:focus{
-    box-shadow:0 0 0 .05rem #606c75
 }
