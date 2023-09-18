@@ -1,12 +1,9 @@
 {
 	"tracks":[  "Braila",
 				"Bydgoszcz",
-				"Warszawa",
 				"Częstochowa",
 				"Dackarna",
 				"Gniezno",
-				"Gorzów",
-				"Grudziądz",
 				"Hallera",
 				"Krosno",
 				"Leszno",
@@ -19,12 +16,14 @@
 				"Poznań",
 				"Rybnik",
 				"Ryga",
-				"Smoczyk",
 				"Śrem",
 				"Jancarz",
-				"Witnica",
 				"Wrocław",
 				"Byrjun",
-				"Zielona Gora"
+				"Zielona Gora",
+				"Rzeszów",
+				"Wybrzeże",
+				"Polan",
+				"Gillman"
 	]
 }
